@@ -74,7 +74,7 @@ class ViewController: UIViewController {
             background.image = UIImage(named: "BG")
             
             //The area is for git controll
-            print("Hellow Git")
+            print("Hello Git")
         }
     }
     
@@ -84,6 +84,12 @@ class ViewController: UIViewController {
         //push the keyboard on
         inputTextField.becomeFirstResponder()
         
+        func makeChange(text:String)->String{
+            
+            return String(text.reversed())
+            
+        }
+        print(makeChange(text: "stressed"))
 
     }
 
