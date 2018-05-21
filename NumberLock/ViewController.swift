@@ -72,6 +72,9 @@ class ViewController: UIViewController {
             answer = GKRandomSource.sharedRandom().nextInt(upperBound: 100) + 1
             isOver = false
             background.image = UIImage(named: "BG")
+            
+            //The area is for git controll
+            print("Hellow Git")
         }
     }
     
@@ -81,7 +84,7 @@ class ViewController: UIViewController {
         //push the keyboard on
         inputTextField.becomeFirstResponder()
         
-       
+
     }
 
     override func didReceiveMemoryWarning() {
