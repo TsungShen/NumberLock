@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         return .lightContent
     }
     
+    
+    @IBOutlet weak var authorMessage: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var inputTextField: UITextField!
     
@@ -72,10 +74,10 @@ class ViewController: UIViewController {
             answer = GKRandomSource.sharedRandom().nextInt(upperBound: 100) + 1
             isOver = false
             background.image = UIImage(named: "BG")
-            
-            //The area is for git controll
-            print("Hello Git")
         }
+        //The area is for git controll
+        print("Hello Git")
+        authorMessage.text = "TSL"
     }
     
     override func viewDidLoad() {
